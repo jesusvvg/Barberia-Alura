@@ -1,0 +1,284 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.formulario{
+    margin: 2em;
+}
+
+header {
+    background-color: #bbbbbb;
+    padding: 20px;
+}
+
+.caja{
+   width: 940px;
+   position: relative;
+   margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+.productos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.productos li:hover{
+    border-color: #c78c19;
+}
+
+.productos li:hover h2{
+    font-size: 33px;
+}
+
+.productos li:active{
+    border-color: green;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.productos-descripcion{
+    font-size: 20px;
+}
+
+.productos-precio{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+}
+
+.pie{
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px;
+}
+
+/* aqui comienza contactos*/
+
+form{
+    margin: 40px 0;
+}
+
+
+form label, legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+
+
+.input-padron{
+    display: block;
+    margin:0 0 20px;
+    padding: 10px 20px;
+    width: 37%;
+}
+
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%; /* el espacio que queremos que tenga */
+    padding: 15px 0; /*el tamaño interno del boton*/
+    font-size: 18px; /*tamaño de la letra*/
+    font-weight: bold; /*estilo de la letra negrita*/
+    color: white; /*color de la letra*/
+    background: orange; /*color del boton*/
+    border: none; /* sin borde */
+    border-radius: 5px; /* redondea los vertices*/
+    transition: 1s all; /* tiempo en que tarda a otro color, antes era background y se cambio a all*/
+    cursor: pointer; /* cambiamos el puntero del mouse*/
+}
+
+.enviar:hover{
+    background: darkorange; /* cambio de color cuando el puntero esta sobre el*/
+    transform: scale(1.2);
+}
+
+table{
+    margin: 40px;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{ /*borde del cuerpo de la tabla y del encabezado*/
+    border: 1px solid black;
+    padding: 8px 15px;/*espacio interno de las celdas*/
+}
+
+/*aqui inicia el home*/
+
+.barberia{
+    width: 100%;
+}
+
+.principal{
+    background: #fefefe;
+    padding: 3em 0;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.tituloprincipal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+}
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.utensilios{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(#fefefe, #888888);
+}
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.diferenciales{
+    padding: 3em 0;
+    background: #888888;
+}
+
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-diferenciales{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top; /*para que la lista suba y se alinie con la imagen*/
+}
+
+.imagenDiferenciales{
+    width: 60%;
+    transition: 500ms;
+    box-shadow: 10px 10px 30px 5px #000000;
+    border-radius: 10px;
+}
+
+.imagenDiferenciales:hover{
+    opacity: 0.3;
+}
+
+.items{
+    line-height: 1.5;
+    margin: 0 2em 0 0;
+}
+
+.items:before{
+    content: "★";
+}
+    
+
+.items:first-child{ /*para nombrar el primer items y asi modificarlo solo a el*/
+    font-weight: bold;
+}
+
+.video{
+    margin: 1em auto;
+    width: 560px;
+}
+
+/* de aqui la pagina responsiv*/
+/*home*/
+
+@media screen and (max-width:480px) {
+        h1{
+            text-align: center;
+        }
+
+        nav{
+            position: static;
+        }
+       .caja, .principal, .mapa-contenido,.contenido-diferenciales, .video, .productos li{
+        width: auto;
+       }
+
+       .lista-diferenciales, .imagenDiferenciales, .productos, .formulario{
+        width: 100%;
+       }
+
+    }  
+       
+
+       
+
+
+       
+    
